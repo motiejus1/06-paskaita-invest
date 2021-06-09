@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesta paskaita</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+        }
+
+        .flex-item-1 {
+            width: 100%;
+            background-color: silver;
+        }
+
+        .flex-item-2, .flex-item-3 {
+            width: 50%;
+        } 
+
+        .flex-item-4 {
+            width: 70%;
+        }
+
+        .flex-item-5 {
+            width: 30%;
+        }
+
+        .flex-item-6, .flex-item-7, .flex-item-8 {
+            width: 33.33%;
+        }
+
+
+        .zydra {
+            background-color:aqua;
+        }
+
+        .zalsva {
+            background-color: aquamarine;
+        }
+
+        .rozine {
+            background-color: pink;
+        }
+
+        p {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 720px) {
+            .flex-container {
+                flex-direction:column;
+                flex-wrap: wrap;
+            }
+
+            [class*="flex-item-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flex pavyzdys</h1>
+        <div class="flex-container">
+            <div class="flex-item-1"><p>1</p></div>
+            <div class="flex-item-2 zydra"><p>2</p></div>
+            <div class="flex-item-3 zalsva"><p>3</p></div>
+            <div class="flex-item-4 rozine"><p>4</p></div>
+            <div class="flex-item-5 zydra"><p>5</p></div>
+            <div class="flex-item-6 zalsva"><p>6</p></div>
+            <div class="flex-item-7 rozine"><p>7</p></div>
+            <div class="flex-item-8 zydra"><p>8</p></div>
+            <div class="flex-item-9"><p>9</p></div>
+        </div>
+    </div>
+</body>
+</html>
